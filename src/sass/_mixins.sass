@@ -1,0 +1,56 @@
+@import ../../node_modules/breakpoint-sass/stylesheets/breakpoint
+
+//Cores
+$pq-color1: #E38A05
+$pq-color2: #333333
+$pq-color3: #ffffff
+$bgMenu: rgba(255,255,255,.7)
+
+//font-weight Roboto
+$f1-light: 300
+$f1-regular: 400
+$f1-bold: 700
+
+//breakpoints
+$celular: max-width 576px
+$tablet: max-width 768px
+$desktop: max-width 1366px
+
+=transition($transition...)
+	-webkit-transition: all $transition linear
+	-o-transition: all $transition linear
+	transition: all $transition linear
+
+=placeholderColor($holderColor,$fontSize,$fontWeight)
+	input::placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight
+	input::-webkit-input-placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight
+	input::-ms-input-placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight
+	input::-ms-input-placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight
+	textarea::placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight
+	textarea::-webkit-input-placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight
+	textarea::-ms-input-placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight
+	textarea::-ms-input-placeholder
+		color: $holderColor
+		font-size: $fontSize
+		font-weight: $fontWeight

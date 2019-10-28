@@ -66,6 +66,10 @@ main
             border:
                 top: 2px solid $ss-color1
                 bottom: 2px solid $ss-color1
+            +breakpoint($tablet)
+                padding: 5.625rem 3rem
+            +breakpoint($celular)
+                padding: 5.625rem 2rem
             h3
                 margin-bottom: 1.5rem
                 font:
@@ -86,6 +90,33 @@ main
                     weight: $f1-regular
                 text:
                     align: center
+                +breakpoint($celular)
+                    text:
+                        align: justify
+            .form
+                margin-top: 3.125rem
+                form
+                    input, textarea
+                    +placeholderColor(#CFCFCF,.875rem,$f1-light)
+                    .btnForm
+                        margin: 3.125rem auto 0 auto
+                        padding: .5rem 4.125rem
+                        display: flex
+                        justify-content: center
+                        color: $ss-color3
+                        font:
+                            style: normal
+                            size: 1.125rem
+                            weight: $f1-regular
+                        background:
+                            color: $ss-color1
+                        border: none
+                        border-radius: .3125rem
+                        &:hover
+                            background:
+                                color: darken($ss-color1, 5%)
+                            +transition(.3s)
+
     #gallery
         padding: 6.5rem 0
         .container
@@ -103,7 +134,7 @@ main
                     transform: uppercase
             a
                 margin: auto
-                padding: .875rem 3.75rem
+                padding: .5rem 3.75rem
                 color: $ss-color2
                 font:
                     style: normal

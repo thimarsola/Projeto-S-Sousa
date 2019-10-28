@@ -111,6 +111,12 @@ main #contactForm {
     padding: 5.625rem 12rem;
     border-top: 2px solid #E38A05;
     border-bottom: 2px solid #E38A05; }
+    @media (max-width: 768px) {
+      main #contactForm .container {
+        padding: 5.625rem 3rem; } }
+    @media (max-width: 576px) {
+      main #contactForm .container {
+        padding: 5.625rem 2rem; } }
     main #contactForm .container h3 {
       margin-bottom: 1.5rem;
       font-style: normal;
@@ -127,6 +133,60 @@ main #contactForm {
       font-size: 1rem;
       font-weight: 400;
       text-align: center; }
+      @media (max-width: 576px) {
+        main #contactForm .container p {
+          text-align: justify; } }
+    main #contactForm .container .form {
+      margin-top: 3.125rem; }
+      main #contactForm .container .form form input::placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form input::-webkit-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form input::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form input::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form textarea::placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form textarea::-webkit-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form textarea::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form textarea::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main #contactForm .container .form form .btnForm {
+        margin: 3.125rem auto 0 auto;
+        padding: 0.5rem 4.125rem;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-style: normal;
+        font-size: 1.125rem;
+        font-weight: 400;
+        background-color: #E38A05;
+        border: none;
+        border-radius: 0.3125rem; }
+        main #contactForm .container .form form .btnForm:hover {
+          background-color: #ca7b04;
+          -webkit-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
 main #gallery {
   padding: 6.5rem 0; }
   main #gallery .container {
@@ -142,7 +202,7 @@ main #gallery {
       text-transform: uppercase; }
     main #gallery .container a {
       margin: auto;
-      padding: 0.875rem 3.75rem;
+      padding: 0.5rem 3.75rem;
       color: #333;
       font-style: normal;
       font-size: 1.125rem;

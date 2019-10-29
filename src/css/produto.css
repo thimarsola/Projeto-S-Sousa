@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 100% !important;
   font-size: 16px !important;
@@ -69,9 +70,47 @@ header {
   background-size: cover;
   background-position: center; }
 
+main #productNav .container {
+  transform: translateY(-50%);
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px); }
+  main #productNav .container ul {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style: none; }
+    @media (max-width: 576px) {
+      main #productNav .container ul {
+        display: block; } }
+    main #productNav .container ul li {
+      text-align: center; }
+      main #productNav .container ul li:nth-child(2)::after, main #productNav .container ul li:nth-child(2) ::before {
+        margin: 0 1rem;
+        color: #E38A05;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "";
+        text-align: center; }
+        @media (max-width: 576px) {
+          main #productNav .container ul li:nth-child(2)::after, main #productNav .container ul li:nth-child(2) ::before {
+            display: block;
+            transform: rotate(90deg); } }
+      main #productNav .container ul li a {
+        color: #333;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none; }
+        main #productNav .container ul li a:hover {
+          color: #E38A05;
+          -webkit-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
 main #product {
   margin: 0;
-  padding: 6.25rem 0; }
+  padding: 3.25rem 0; }
   main #product .row div[class^="col"]:nth-child(1) {
     margin: auto;
     padding: 2rem;
@@ -180,10 +219,12 @@ main #contactForm {
         font-size: 1.125rem;
         font-weight: 400;
         background-color: #E38A05;
-        border: none;
+        border: 1px solid #E38A05;
+        -webkit-border-radius: 0.3125rem;
         border-radius: 0.3125rem; }
         main #contactForm .container .form form .btnForm:hover {
           background-color: #ca7b04;
+          border-color: #ca7b04;
           -webkit-transition: all 0.3s linear;
           -o-transition: all 0.3s linear;
           transition: all 0.3s linear; }

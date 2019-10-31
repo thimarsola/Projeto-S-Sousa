@@ -12,6 +12,63 @@ body {
       font-size: 14px !important;
       width: 100% !important; } }
 
+nav {
+  z-index: 100 !important;
+  min-height: 6.25rem;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-bottom: 2px solid #E38A05;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); }
+  nav ul li {
+    text-align: center; }
+    nav ul li a {
+      padding: 0.5rem 1.375rem !important;
+      color: #333 !important;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 400; }
+      nav ul li a:hover {
+        color: #E38A05 !important;
+        transform: scale(1.2);
+        -webkit-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear; }
+        nav ul li a:hover::after {
+          content: "";
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid #ca7b04; }
+  @media (max-width: 768px) {
+    nav .actionButtons {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center; } }
+  nav .actionButtons .btnBudget {
+    margin-right: 2rem;
+    padding: 0.5rem 2.75rem;
+    background-color: #E38A05;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 50rem;
+    border-radius: 50rem; }
+    nav .actionButtons .btnBudget:hover {
+      background-color: #ca7b04;
+      -webkit-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear; }
+    @media (max-width: 576px) {
+      nav .actionButtons .btnBudget {
+        margin-right: 1.5rem; } }
+  nav .actionButtons .whatsappButton img:hover {
+    transform: scale(1.1);
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+
 footer .imageFooter {
   margin: 0;
   padding: 0;
@@ -75,6 +132,7 @@ main #productNav .container {
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px); }
   main #productNav .container ul {
     margin: 0;

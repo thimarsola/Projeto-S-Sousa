@@ -1,2 +1,316 @@
 @import mixins
 @import body
+@import navbar
+@import footer
+
+header
+    width: 100%
+    height: 100vh
+    background:
+        image: url("../assets/bg-header-index.png")
+        size: cover
+        position: right
+        attachment: fixed
+        bottom: 4px solid $ss-color1
+    +breakpoint($tablet)
+        background:
+            position: 48%
+    +breakpoint($celular)
+        background:
+            position: right
+            blend-mode: color
+            color: rgba(0,0,0,.6)
+    .contentHeader
+        height: 100%
+        display: flex
+        justify-content: left
+        align-items: center
+        .container
+            .containerHeader
+                width: 35vw
+                color: $ss-color2
+                +breakpoint($tablet)
+                    width: 50vw
+                +breakpoint($celular)
+                    width: 100%
+                    color: $ss-color3
+                h2
+                    margin-bottom: 2rem
+                    font:
+                        style: normal
+                        size: 2.75rem
+                        weight: $f1-bold
+                    +breakpoint($celular)
+                        margin-top: 5rem
+                        font:
+                            size: 2.125rem
+                    span
+                        color: $ss-color1
+                p
+                    margin:
+                        bottom: 2.75rem
+                    font:
+                        style: normal
+                        size: 1rem
+                        weight: $f1-regular
+                    text:
+                        align: justify
+                .btnHeader
+                    padding: .5rem 2.75rem
+                    background:
+                        color: $ss-color1
+                    color: $ss-color3
+                    font:
+                        style: normal
+                        size: 1.125rem
+                        weight: $f1-regular
+                    text:
+                        align: center
+                        decoration: none
+                    -webkit-border-radius: .3125rem
+                    border-radius: .3125rem
+                    &:hover
+                        background:
+                            color: darken($ss-color1, 5%)
+                        +transition(.25s)
+                    +breakpoint($celular)
+                        margin-right: 1.5rem
+
+
+main
+    #about
+        margin: 0
+        padding: 6.75rem 0
+        .contentAbout
+            h2
+                font:
+                    style: normal
+                    size: 2.625rem
+                    weight: $f1-regular
+                text:
+                    align: center
+                    transform: uppercase
+            hr
+                width: 10rem
+                margin: 1rem auto 3.125rem auto
+                border: 1px solid $ss-color1
+            p
+                font:
+                    style: normal
+                    size: 1.125rem
+                    weight: $f1-regular
+                text:
+                    align: center
+        .aboutFrames
+            .row
+                margin-top: 5.625rem
+                div[class^=col]
+                    +breakpoint($celular)
+                        margin: 1rem 0
+                    .frame
+                        height: 13.625rem
+                        padding: 2rem 1.5rem
+                        border: 2px solid $ss-color1
+                        -webkit-border-radius: 0 2.5rem
+                        border-radius: 0 2.5rem
+                        +breakpoint($tablet)
+                            height: 21.625rem
+                            -webkit-border-radius: 0 1.5rem
+                            border-radius: 0 1.5rem
+                        +breakpoint($celular)
+                            height: 100%
+                            -webkit-border-radius: 1.5rem
+                            border-radius: 1.5rem
+                        h6
+                            color: $ss-color1
+                            font:
+                                style: normal
+                                size: 1.25rem
+                                weight: $f1-regular
+                            text:
+                                transform: uppercase
+                        hr
+                            margin: .3125rem 0 1rem 0
+                            padding: 0 !important
+                            width: 3.125rem
+                            border: 1.5px solid $ss-color1
+                        p
+                            font:
+                                size: .875rem !important
+                            text:
+                                align: justify !important
+    #carouselBanner
+        border:
+            bottom: 3px solid $ss-color1
+        .container-fluid
+            padding: 0 !important
+    #partners
+        padding: 6.25rem 0
+        background:
+            image: url("../assets/bg-partners.svg")
+            size: cover
+            position: center
+        border:
+            bottom: 3px solid $ss-color1
+        h2
+            font:
+                style: normal
+                size: 2.625rem
+                wegiht: $f1-regular
+            text:
+                align: center
+                transform: uppercase
+        hr
+            width: 10rem
+            margin: 1rem auto 3.125rem auto
+            border: 1px solid $ss-color1
+        p
+            margin-bottom: 5rem
+            font:
+                style: normal
+                size: 1.125rem
+                weight: $f1-regular
+            text:
+                align: center
+        .carouselPartners
+            .carousel-item
+                .row
+                    div[class^="col"]
+                        display: flex
+                        justify-content: center
+                        +breakpoint($celular)
+                            &:nth-child(2)
+                                margin: 1rem 0
+                            &:nth-child(3)
+                                margin-bottom: 1rem
+    .division
+        width: 100%
+        height: 13.75rem
+        background:
+            image: url("../assets/bg-division.jpg")
+    #featured
+        padding: 5.625rem 0
+        .container
+        h2
+            font:
+                style: normal
+                size: 2.625rem
+                wegiht: $f1-regular
+            text:
+                align: center
+                transform: uppercase
+        hr
+            width: 10rem
+            margin: 1rem auto 3.125rem auto
+            border: 1px solid $ss-color1
+        .row
+            div[class^="col"]
+                +breakpoint($tablet)
+                    margin: 1rem 0
+                .cardFeatured
+                    width: 100%
+                    height: 25rem
+                    padding: 0 1.125rem
+                    box:
+                        sizing: border-box
+                        shadow: 0 0 .5rem rgba(51,51,51,.2)
+                    -webkit-border-radius: 5px
+                    border-radius: 5px
+                    .cardImage
+                        display: flex
+                        justify-content: center
+                        width: 100%
+                        height: 11.25rem
+                        img
+                            object:
+                                fit: cover
+                                position: center
+                    .cardContent
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        margin-top: 1.75rem
+                        h2
+                            margin-bottom: 1rem
+                            font:
+                                style: normal
+                                size: 1.125rem
+                                weight: $f1-regular
+                        p
+                            margin: 0
+                            padding: 0
+                            font:
+                                style: normal
+                                size: .875rem
+                                weight: $f1-regular
+                            &:nth-child(4)
+                                margin-bottom: 1.625rem !important
+                        .btnCard
+                            width: 100%
+                            padding: .5rem 2.75rem
+                            background:
+                                color: $ss-color1
+                            color: $ss-color3
+                            font:
+                                style: normal
+                                size: 1.125rem
+                                weight: $f1-regular
+                            text:
+                                align: center
+                                decoration: none
+                            -webkit-border-radius: .3125rem
+                            border-radius: .3125rem
+                            &:hover
+                                background:
+                                    color: darken($ss-color1, 5%)
+                                +transition(.25s)
+                            +breakpoint($celular)
+                                margin-right: 1.5rem
+    #productLine
+        display: flex
+        justify-content: center
+        padding: 3.5rem 0
+        background:
+            image: url("../assets/bg-product-line.jpg")
+            size: cover
+            position: center
+        .container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            h1
+                margin-bottom: 3.125rem
+                color: $ss-color3
+                font:
+                    style: normal
+                    size: 2.25rem
+                    weight: $f1-regular
+                text:
+                    align: center
+                    transform: uppercase
+            .btnProductLine
+                display: flex
+                justify-content: center
+                margin: 0
+                text:
+                    decoration: none
+                span
+                    margin: 0 !important
+                    padding: .5rem 2.75rem
+                    border: 1px solid $ss-color3
+                    color: $ss-color3
+                    font:
+                        style: normal
+                        size: 1.125rem
+                        weight: $f1-regular
+                    text:
+                        align: center
+                    -webkit-border-radius: 50rem
+                    border-radius: 50rem
+                    &:hover
+                        border-color: $ss-color1
+                        background:
+                            color: $ss-color1
+                        +transition(.25s)
+                    +breakpoint($celular)
+                        margin-right: 1.5rem

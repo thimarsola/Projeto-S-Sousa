@@ -11,4 +11,383 @@ body {
       font-size: 14px !important;
       width: 100% !important; } }
 
+nav {
+  z-index: 100 !important;
+  min-height: 6.25rem;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-bottom: 2px solid #E38A05;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); }
+  nav ul li {
+    text-align: center; }
+    nav ul li a {
+      padding: 0.5rem 1.375rem !important;
+      color: #333 !important;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 400; }
+      nav ul li a:hover {
+        color: #E38A05 !important;
+        transform: scale(1.2);
+        -webkit-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear; }
+        nav ul li a:hover::after {
+          content: "";
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid #ca7b04; }
+  @media (max-width: 768px) {
+    nav .actionButtons {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center; } }
+  nav .actionButtons .btnBudget {
+    margin-right: 2rem;
+    padding: 0.5rem 2.75rem;
+    background-color: #E38A05;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 50rem;
+    border-radius: 50rem; }
+    nav .actionButtons .btnBudget:hover {
+      background-color: #ca7b04;
+      -webkit-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear; }
+    @media (max-width: 576px) {
+      nav .actionButtons .btnBudget {
+        margin-right: 1.5rem; } }
+  nav .actionButtons .whatsappButton img:hover {
+    transform: scale(1.1);
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+
+footer .imageFooter {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30vh;
+  background-image: url("../assets/img-destaque-footer.jpg");
+  background-size: cover;
+  background-position: center; }
+footer .ssousaFooter {
+  margin: 0;
+  padding: 3.75rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../assets/bg-footer.svg");
+  background-size: cover;
+  background-position: top !important;
+  border-bottom: 1px solid #E38A05; }
+  footer .ssousaFooter p {
+    margin-top: 2rem;
+    color: #fff;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+footer .goognetFooter {
+  margin: 0;
+  padding: 0.625rem 0;
+  background-color: #111111; }
+  footer .goognetFooter p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+    footer .goognetFooter p small a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none; }
+      footer .goognetFooter p small a:hover {
+        color: #7ec242;
+        -webkit-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear; }
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/bg-header-index.png");
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  background-bottom: 4px solid #E38A05; }
+  @media (max-width: 768px) {
+    header {
+      background-position: 48%; } }
+  @media (max-width: 576px) {
+    header {
+      background-position: right;
+      background-blend-mode: color;
+      background-color: rgba(0, 0, 0, 0.6); } }
+  header .contentHeader {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center; }
+    header .contentHeader .container .containerHeader {
+      width: 35vw;
+      color: #333; }
+      @media (max-width: 768px) {
+        header .contentHeader .container .containerHeader {
+          width: 50vw; } }
+      @media (max-width: 576px) {
+        header .contentHeader .container .containerHeader {
+          width: 100%;
+          color: #fff; } }
+      header .contentHeader .container .containerHeader h2 {
+        margin-bottom: 2rem;
+        font-style: normal;
+        font-size: 2.75rem;
+        font-weight: 700; }
+        @media (max-width: 576px) {
+          header .contentHeader .container .containerHeader h2 {
+            margin-top: 5rem;
+            font-size: 2.125rem; } }
+        header .contentHeader .container .containerHeader h2 span {
+          color: #E38A05; }
+      header .contentHeader .container .containerHeader p {
+        margin-bottom: 2.75rem;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: justify; }
+      header .contentHeader .container .containerHeader .btnHeader {
+        padding: 0.5rem 2.75rem;
+        background-color: #E38A05;
+        color: #fff;
+        font-style: normal;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        -webkit-border-radius: 0.3125rem;
+        border-radius: 0.3125rem; }
+        header .contentHeader .container .containerHeader .btnHeader:hover {
+          background-color: #ca7b04;
+          -webkit-transition: all 0.25s linear;
+          -o-transition: all 0.25s linear;
+          transition: all 0.25s linear; }
+        @media (max-width: 576px) {
+          header .contentHeader .container .containerHeader .btnHeader {
+            margin-right: 1.5rem; } }
+
+main #about {
+  margin: 0;
+  padding: 6.75rem 0; }
+  main #about .contentAbout h2 {
+    font-style: normal;
+    font-size: 2.625rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase; }
+  main #about .contentAbout hr {
+    width: 10rem;
+    margin: 1rem auto 3.125rem auto;
+    border: 1px solid #E38A05; }
+  main #about .contentAbout p {
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center; }
+  main #about .aboutFrames .row {
+    margin-top: 5.625rem; }
+    @media (max-width: 576px) {
+      main #about .aboutFrames .row div[class^=col] {
+        margin: 1rem 0; } }
+    main #about .aboutFrames .row div[class^=col] .frame {
+      height: 13.625rem;
+      padding: 2rem 1.5rem;
+      border: 2px solid #E38A05;
+      -webkit-border-radius: 0 2.5rem;
+      border-radius: 0 2.5rem; }
+      @media (max-width: 768px) {
+        main #about .aboutFrames .row div[class^=col] .frame {
+          height: 21.625rem;
+          -webkit-border-radius: 0 1.5rem;
+          border-radius: 0 1.5rem; } }
+      @media (max-width: 576px) {
+        main #about .aboutFrames .row div[class^=col] .frame {
+          height: 100%;
+          -webkit-border-radius: 1.5rem;
+          border-radius: 1.5rem; } }
+      main #about .aboutFrames .row div[class^=col] .frame h6 {
+        color: #E38A05;
+        font-style: normal;
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-transform: uppercase; }
+      main #about .aboutFrames .row div[class^=col] .frame hr {
+        margin: 0.3125rem 0 1rem 0;
+        padding: 0 !important;
+        width: 3.125rem;
+        border: 1.5px solid #E38A05; }
+      main #about .aboutFrames .row div[class^=col] .frame p {
+        font-size: 0.875rem !important;
+        text-align: justify !important; }
+main #carouselBanner {
+  border-bottom: 3px solid #E38A05; }
+  main #carouselBanner .container-fluid {
+    padding: 0 !important; }
+main #partners {
+  padding: 6.25rem 0;
+  background-image: url("../assets/bg-partners.svg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 3px solid #E38A05; }
+  main #partners h2 {
+    font-style: normal;
+    font-size: 2.625rem;
+    font-wegiht: 400;
+    text-align: center;
+    text-transform: uppercase; }
+  main #partners hr {
+    width: 10rem;
+    margin: 1rem auto 3.125rem auto;
+    border: 1px solid #E38A05; }
+  main #partners p {
+    margin-bottom: 5rem;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center; }
+  main #partners .carouselPartners .carousel-item .row div[class^="col"] {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 576px) {
+      main #partners .carouselPartners .carousel-item .row div[class^="col"]:nth-child(2) {
+        margin: 1rem 0; }
+      main #partners .carouselPartners .carousel-item .row div[class^="col"]:nth-child(3) {
+        margin-bottom: 1rem; } }
+main .division {
+  width: 100%;
+  height: 13.75rem;
+  background-image: url("../assets/bg-division.jpg"); }
+main #featured {
+  padding: 5.625rem 0; }
+  main #featured h2 {
+    font-style: normal;
+    font-size: 2.625rem;
+    font-wegiht: 400;
+    text-align: center;
+    text-transform: uppercase; }
+  main #featured hr {
+    width: 10rem;
+    margin: 1rem auto 3.125rem auto;
+    border: 1px solid #E38A05; }
+  @media (max-width: 768px) {
+    main #featured .row div[class^="col"] {
+      margin: 1rem 0; } }
+  main #featured .row div[class^="col"] .cardFeatured {
+    width: 100%;
+    height: 25rem;
+    padding: 0 1.125rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.5rem rgba(51, 51, 51, 0.2);
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    main #featured .row div[class^="col"] .cardFeatured .cardImage {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 11.25rem; }
+      main #featured .row div[class^="col"] .cardFeatured .cardImage img {
+        object-fit: cover;
+        object-position: center; }
+    main #featured .row div[class^="col"] .cardFeatured .cardContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 1.75rem; }
+      main #featured .row div[class^="col"] .cardFeatured .cardContent h2 {
+        margin-bottom: 1rem;
+        font-style: normal;
+        font-size: 1.125rem;
+        font-weight: 400; }
+      main #featured .row div[class^="col"] .cardFeatured .cardContent p {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-size: 0.875rem;
+        font-weight: 400; }
+        main #featured .row div[class^="col"] .cardFeatured .cardContent p:nth-child(4) {
+          margin-bottom: 1.625rem !important; }
+      main #featured .row div[class^="col"] .cardFeatured .cardContent .btnCard {
+        width: 100%;
+        padding: 0.5rem 2.75rem;
+        background-color: #E38A05;
+        color: #fff;
+        font-style: normal;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        -webkit-border-radius: 0.3125rem;
+        border-radius: 0.3125rem; }
+        main #featured .row div[class^="col"] .cardFeatured .cardContent .btnCard:hover {
+          background-color: #ca7b04;
+          -webkit-transition: all 0.25s linear;
+          -o-transition: all 0.25s linear;
+          transition: all 0.25s linear; }
+        @media (max-width: 576px) {
+          main #featured .row div[class^="col"] .cardFeatured .cardContent .btnCard {
+            margin-right: 1.5rem; } }
+main #productLine {
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 0;
+  background-image: url("../assets/bg-product-line.jpg");
+  background-size: cover;
+  background-position: center; }
+  main #productLine .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main #productLine .container h1 {
+      margin-bottom: 3.125rem;
+      color: #fff;
+      font-style: normal;
+      font-size: 2.25rem;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase; }
+    main #productLine .container .btnProductLine {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      text-decoration: none; }
+      main #productLine .container .btnProductLine span {
+        margin: 0 !important;
+        padding: 0.5rem 2.75rem;
+        border: 1px solid #fff;
+        color: #fff;
+        font-style: normal;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+        -webkit-border-radius: 50rem;
+        border-radius: 50rem; }
+        main #productLine .container .btnProductLine span:hover {
+          border-color: #E38A05;
+          background-color: #E38A05;
+          -webkit-transition: all 0.25s linear;
+          -o-transition: all 0.25s linear;
+          transition: all 0.25s linear; }
+        @media (max-width: 576px) {
+          main #productLine .container .btnProductLine span {
+            margin-right: 1.5rem; } }
+
 /*# sourceMappingURL=main.css.map */

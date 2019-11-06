@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 100% !important;
   font-size: 16px !important;
@@ -389,5 +390,144 @@ main #productLine {
         @media (max-width: 576px) {
           main #productLine .container .btnProductLine span {
             margin-right: 1.5rem; } }
+main #contact {
+  padding: 7.5rem 0; }
+  main #contact .container .row div[class^="col"]:nth-child(1) h2 {
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-size: 2.25rem;
+    font-weight: 400; }
+  main #contact .container .row div[class^="col"]:nth-child(1) hr {
+    display: block;
+    margin: 0 !important;
+    width: 10rem;
+    border: 1.5px solid #E38A05; }
+  main #contact .container .row div[class^="col"]:nth-child(1) p {
+    margin: 3.125rem 0;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form input::placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form input::-webkit-input-placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form input::-ms-input-placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form input::-ms-input-placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form textarea::placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form textarea::-webkit-input-placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form textarea::-ms-input-placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form textarea::-ms-input-placeholder {
+    color: #CFCFCF;
+    font-size: 0.875rem;
+    font-weight: 300; }
+  main #contact .container .row div[class^="col"]:nth-child(1) form .btnForm {
+    margin: 3.125rem auto 0 auto;
+    padding: 0.5rem 4.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    background-color: #E38A05;
+    border: 1px solid #E38A05;
+    -webkit-border-radius: 0.3125rem;
+    border-radius: 0.3125rem; }
+    main #contact .container .row div[class^="col"]:nth-child(1) form .btnForm:hover {
+      background-color: #ca7b04;
+      border-color: #ca7b04;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+  @media (max-width: 576px) {
+    main #contact .container .row div[class^="col"]:nth-child(2) {
+      margin-top: 4rem; } }
+  main #contact .container .row div[class^="col"]:nth-child(2) .map iframe {
+    width: 100%;
+    height: 14.5rem;
+    border: none; }
+  main #contact .container .row div[class^="col"]:nth-child(2) ul {
+    margin-top: 3.125rem;
+    list-style: none;
+    padding: 0; }
+    main #contact .container .row div[class^="col"]:nth-child(2) ul li {
+      padding: 0.5625rem 0; }
+      main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(1) address a {
+        display: flex;
+        align-items: center; }
+        main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(1) address a:before {
+          display: block;
+          margin-right: 1rem;
+          font-family: "Font Awesome 5 Free";
+          font-size: 1.875rem;
+          font-weight: 900;
+          content: "";
+          color: #E38A05; }
+      main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(2) address a {
+        display: flex;
+        align-items: center; }
+        main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(2) address a:before {
+          margin-right: 1rem;
+          font-family: "Font Awesome 5 Brands";
+          font-size: 1.875rem;
+          font-weight: 400;
+          content: "";
+          color: #20B038; }
+      main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(3) address a {
+        display: flex;
+        align-items: center; }
+        main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(3) address a:before {
+          display: block;
+          margin-right: 1rem;
+          font-family: "Font Awesome 5 Free";
+          font-size: 1.875rem;
+          font-weight: 900;
+          content: "";
+          color: #E38A05; }
+      main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(4) address a {
+        display: flex;
+        align-items: center; }
+        main #contact .container .row div[class^="col"]:nth-child(2) ul li:nth-child(4) address a:before {
+          display: block;
+          margin-right: 1rem;
+          font-family: "Font Awesome 5 Free";
+          font-size: 1.875rem;
+          font-weight: 900;
+          content: "";
+          color: #E38A05; }
+      main #contact .container .row div[class^="col"]:nth-child(2) ul li address {
+        margin: 0; }
+        main #contact .container .row div[class^="col"]:nth-child(2) ul li address a {
+          color: #333;
+          font-style: normal;
+          font-size: 1rem;
+          font-weught: 400;
+          text-decoration: none; }
+          main #contact .container .row div[class^="col"]:nth-child(2) ul li address a:hover {
+            color: #E38A05;
+            -webkit-transition: all 0.25s linear;
+            -o-transition: all 0.25s linear;
+            transition: all 0.25s linear; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,212 @@
+body {
+  width: 100% !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif !important;
+  color: #333 !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+  @media (max-width: 576px) {
+    body {
+      font-size: 14px !important;
+      width: 100% !important; } }
+
+nav {
+  z-index: 100 !important;
+  min-height: 6.25rem;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-bottom: 2px solid #E38A05;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); }
+  nav ul li {
+    text-align: center; }
+    nav ul li a {
+      padding: 0.5rem 1.375rem !important;
+      color: #333 !important;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 400; }
+      nav ul li a:hover {
+        color: #E38A05 !important;
+        transform: scale(1.2);
+        -webkit-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear; }
+        nav ul li a:hover::after {
+          content: "";
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid #ca7b04; }
+  @media (max-width: 768px) {
+    nav .actionButtons {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center; } }
+  nav .actionButtons .btnBudget {
+    margin-right: 2rem;
+    padding: 0.5rem 2.75rem;
+    background-color: #E38A05;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 50rem;
+    border-radius: 50rem; }
+    nav .actionButtons .btnBudget:hover {
+      background-color: #ca7b04;
+      -webkit-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear; }
+    @media (max-width: 576px) {
+      nav .actionButtons .btnBudget {
+        margin-right: 1.5rem; } }
+  nav .actionButtons .whatsappButton img:hover {
+    transform: scale(1.1);
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+
+footer .imageFooter {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30vh;
+  background-image: url("../assets/img-destaque-footer.jpg");
+  background-size: cover;
+  background-position: center; }
+footer .ssousaFooter {
+  margin: 0;
+  padding: 3.75rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../assets/bg-footer.svg");
+  background-size: cover;
+  background-position: top !important;
+  border-bottom: 1px solid #E38A05; }
+  footer .ssousaFooter p {
+    margin-top: 2rem;
+    color: #fff;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+footer .goognetFooter {
+  margin: 0;
+  padding: 0.625rem 0;
+  background-color: #111111; }
+  footer .goognetFooter p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+    footer .goognetFooter p small a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none; }
+      footer .goognetFooter p small a:hover {
+        color: #7ec242;
+        -webkit-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear; }
+
+header {
+  width: 100%;
+  height: 50vh;
+  -webkit-border-bottom: 3px solid #E38A05;
+  border-bottom: 3px solid #E38A05;
+  background-image: url("../assets/bg-produto.jpg");
+  background-size: cover;
+  background-position: center; }
+
+main {
+  padding: 10rem 0; }
+  main .container .row div[class^="col"]:nth-child(1) .categoryContent {
+    padding: 2.75rem 1.125rem;
+    background-color: #FBFBFB;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.3); }
+    main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch {
+      margin-bottom: 2.5rem; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch h4 {
+        margin-bottom: 1rem;
+        font-style: normal;
+        font-size: 1.125rem;
+        font-weight: 400; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form input::placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form input::-webkit-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form input::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form input::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form textarea::placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form textarea::-webkit-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form textarea::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form textarea::-ms-input-placeholder {
+        color: #CFCFCF;
+        font-size: 0.875rem;
+        font-weight: 300; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .fieldSearch form input {
+        padding: 0.5rem;
+        border: 1px solid #CFCFCF;
+        box-sizing: border-box;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 100% !important;
+        background: none; }
+    main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories h1 {
+      margin-bottom: 2rem;
+      font-style: normal;
+      font-size: 1.125rem;
+      font-weight: 400; }
+    main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul {
+      padding: 0;
+      list-style: none; }
+      main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul li {
+        padding: 0.5rem 0; }
+        main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul li:first-child {
+          padding-top: 0; }
+        main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul li:last-child {
+          padding-bottom: 0; }
+        main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul li span {
+          margin-right: 1rem; }
+          main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul li span img {
+            transform: scale(1.25); }
+        main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul li a {
+          color: #333;
+          font-style: normal;
+          font-size: 1rem;
+          font-weight: 400;
+          text-decoration: none; }
+          main .container .row div[class^="col"]:nth-child(1) .categoryContent .categories ul li a:hover {
+            color: #E38A05;
+            -webkit-transition: all 0.25s linear;
+            -o-transition: all 0.25s linear;
+            transition: all 0.25s linear; }
+
+/*# sourceMappingURL=produtos.css.map */

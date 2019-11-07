@@ -306,6 +306,7 @@ main #featured {
       width: 100%;
       height: 11.25rem; }
       main #featured .row div[class^="col"] .cardFeatured .cardImage img {
+        height: 100%;
         object-fit: cover;
         object-position: center; }
     main #featured .row div[class^="col"] .cardFeatured .cardContent {

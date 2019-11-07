@@ -1,4 +1,4 @@
-// Navbar fixes
+// Navbar fixed
 $(window).on('scroll', function () {
 	if ($(window).scrollTop()) {
 		$('header nav').addClass('navFixed');
@@ -8,7 +8,7 @@ $(window).on('scroll', function () {
 });
 
 // GoTo
-const menuItens = document.querySelectorAll('nav a[href^="#"]');
+const menuItens = document.querySelectorAll('nav a[href^="#"], .contentHeader a[href^="#"]');
 menuItens.forEach(item =>{
 	item.addEventListener('click', scrollToIdOnClick);
 });
